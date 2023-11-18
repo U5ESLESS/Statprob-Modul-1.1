@@ -1,0 +1,17 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from statistics import mean, median, mode
+
+nilai_uas = [95, 35, 50, 65, 70, 85, 25, 100, 80, 90, 45, 40, 35, 20, 75, 50, 40, 60, 80, 75]
+
+mean_value, median_value, mode_value = mean(nilai_uas), median(nilai_uas), mode(nilai_uas)
+
+plt.hist(nilai_uas, bins=10, color='skyblue', edgecolor='black')
+plt.title('Histogram Nilai UAS Matematika')
+plt.xlabel('Nilai UAS')
+plt.ylabel('Frekuensi')
+plt.show()
+
+print("Mean:", mean_value)
+print("Median:", median_value)
+print("Modus:", mode_value)
